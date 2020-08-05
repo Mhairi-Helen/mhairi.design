@@ -1,18 +1,33 @@
-.nav {
-  //   margin: 1rem;
-}
-
 .nav__btn {
   background-color: var(--white);
   border: transparent;
+  height: 2em;
+  margin: 1em;
 }
 
-.nav__btn span {
+.nav__btn--burger {
   display: block;
-  width: 3.5rem;
-  height: 0.4rem;
+  width: 3.5em;
+  height: 0.4em;
   background-color: var(--dark-grey);
-  margin: 0.5rem 0;
+}
+
+.nav__btn--burger::before,
+.nav__btn--burger::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.5em;
+  height: 0.4em;
+  background-color: var(--dark-grey);
+}
+
+.nav__btn--burger::before {
+  transform: translateY(-0.8em);
+}
+
+.nav__btn--burger::after {
+  transform: translateY(0.8em);
 }
 
 .nav__content {

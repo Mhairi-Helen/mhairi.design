@@ -5,9 +5,7 @@ const Nav = () => {
   return (
     <nav role="navigation" className="nav">
       <button className="nav__btn">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="nav__btn--burger"></span>
       </button>
 
       <ul className="nav__content">
