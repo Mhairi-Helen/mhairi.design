@@ -1,76 +1,75 @@
-button{
-    text-decoration: none;
-    color: var(--white);
-    border: none;
-    font-size: 1rem;
-    padding: 0.5rem 1rem ;
-    margin: 0.5rem;
-    border-radius: 10px ;
-    padding: 1rem 2rem;
+.button {
+  text-decoration: none;
+  color: var(--white);
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
 }
 
 .button--primary {
-    background-color: var(--turquoise);   
+  background-color: var(--hot-pink);
 }
 
 .button--secondary {
-    background-color: var(--orange);
+  background-color: var(--grey);
 }
 
-.button--primary--small { 
-    background-color: var(--turquoise);
-    font-size: 0.75rem;
-    padding: 0.5rem;
+.button--primary--small {
+  background-color: var(--hot-pink);
+  font-size: 0.75rem;
+  padding: 0.5rem;
 }
 
 .button--secondary--small {
-    background-color: var(--orange);
-    font-size: 0.75rem;
-    padding: 0.5rem;
+  background-color: var(--grey);
+  font-size: 0.75rem;
+  padding: 0.5rem;
 }
 
 .disabled {
-    opacity: 0.2;  
+  opacity: 0.2;
 }
 
-.button--icon{
-    display: inline-block;
-    max-width: 4rem; max-height: 4rem;
-    min-width: 2rem; min-height: 2rem;
+.button--icon {
+  display: inline-block;
+  max-width: 3rem;
+  max-height: 3rem;
+  min-width: 1rem;
+  min-height: 1rem;
 }
 
-button:hover {
-    opacity: 0.5;
+.button:hover {
+  opacity: 0.5;
 }
 
-button:active {
-    opacity: 1;
+.button:active {
+  opacity: 1;
 }
 
+@media all and (max-width: 767px) {
+  button {
+    text-decoration: none;
+    color: var(--white);
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+  }
 
+  .button--primary--small {
+    background-color: var(--turquoise);
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
 
-@media all and (max-width: 767px){
-    button{
-        text-decoration: none;
-        color: var(--white);
-        border: none;
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem ;
-        margin: 0.5rem;
-        border-radius: 10px ;
-        padding: 0.8rem 1rem;        
-    }
-    
-    .button--primary--small { 
-        background-color: var(--turquoise);
-        font-size: 0.75rem;
-        padding: 0.5rem;
-    }
-    
-    .button--secondary--small {
-        background-color: var(--orange);
-        font-size: 0.75rem;
-        padding: 0.5rem;
-    }
-
+  .button--secondary--small {
+    background-color: var(--orange);
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
 }

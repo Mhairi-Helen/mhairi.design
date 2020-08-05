@@ -8,9 +8,7 @@ import Head from "./Head";
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Head />
-      </div>
+      <Head />
     </Router>
   );
 }
