@@ -2,22 +2,22 @@
 
 h1 {
   font-family: source-code-pro, monospace;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--dark-grey);
 }
 
 h2 {
   font-family: source-code-pro, monospace;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--grey);
+  color: var(--dark-grey);
   text-align: center;
 }
 
 h3 {
   font-family: source-code-pro, monospace;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--dark-grey);
   text-align: left;
@@ -26,7 +26,7 @@ h3 {
 
 h4 {
   font-family: source-code-pro, monospace;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--grey);
   text-align: left;
@@ -35,7 +35,7 @@ h4 {
 
 h5 {
   font-family: source-code-pro, monospace;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--dark-grey);
   text-align: left;
@@ -44,7 +44,7 @@ h5 {
 
 h6 {
   font-family: source-code-pro, monospace;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--hot-pink);
   text-align: left;
@@ -94,95 +94,8 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /*Headings on a tablet*/
-
-  h1 {
-    font-family: source-code-pro, monospace;
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--white);
-  }
-
-  h2 {
-    font-family: source-code-pro, monospace;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--white);
-    padding: 4rem 5rem;
-    text-align: center;
-  }
-
-  h3 {
-    font-family: source-code-pro, monospace;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--dark-grey);
-    text-align: left;
-    margin: 1em;
-  }
-
-  h4 {
-    font-family: source-code-pro, monospace;
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: var(--dark-grey);
-    text-align: left;
-    margin: 1em;
-  }
 }
 
 @media all and (max-width: 767px) {
   /* Headings on a mobile phone*/
-
-  h1 {
-    font-family: source-code-pro, monospace;
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--white);
-  }
-
-  h2 {
-    font-family: source-code-pro, monospace;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--white);
-    padding: 4rem 5rem;
-    text-align: center;
-  }
-
-  h3 {
-    font-family: source-code-pro, monospace;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--dark-grey);
-    text-align: left;
-    margin: 2em;
-  }
-
-  h4 {
-    font-family: source-code-pro, monospace;
-    font-size: 1.6rem;
-    text-align: center;
-    font-weight: 400;
-    color: var(--dark-grey);
-    text-align: left;
-    margin: 1em;
-  }
-
-  h5 {
-    font-family: source-code-pro, monospace;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--orange);
-    text-align: left;
-    margin: 1em;
-  }
-
-  h6 {
-    font-family: source-code-pro, monospace;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--turquoise);
-    text-align: left;
-    margin: 1em;
-  }
 }

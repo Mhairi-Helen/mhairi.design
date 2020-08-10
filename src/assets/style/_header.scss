@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__name {
+  text-align: right;
+  margin: 2rem 1rem;
+}
+
+.header__name--title {
+  color: var(--hot-pink);
+}

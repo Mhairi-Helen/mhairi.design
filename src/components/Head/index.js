@@ -1,16 +1,17 @@
 import React from "react";
 import Nav from "../Nav";
+import { Link } from "react-router-dom";
 
 const Head = () => {
   return (
-    <div>
+    <header className="header">
       <Nav />
-      <header>
-        <h1>mhairi hislop | full stack developer_</h1>
-      </header>
 
-      <p></p>
-    </div>
+      <h2 className="header__name">
+        mhairi hislop |
+        <span className="header__name--title"> full stack developer</span>
+      </h2>
+    </header>
   );
 };
 
