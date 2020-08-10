@@ -1,3 +1,5 @@
+// formatting for nav BUTTON
+
 .nav__btn {
   background-color: var(--white);
   border: transparent;
@@ -30,27 +32,20 @@
   transform: translateY(0.8em);
 }
 
+// formatting for nav MENU
+
 .nav__content {
   display: block;
   position: fixed;
   height: 100%;
-  background: var(--grey);
+  background: var(--white);
   font-size: 1rem;
   min-width: 5rem;
   left: -30%;
   transition: 2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.nav__item {
-  cursor: pointer;
-}
-
-.nav__link {
-  line-height: 2.5rem;
-  padding: 1rem;
-  text-decoration: none;
-  color: var(--dark-grey);
-}
+// animation for nav MENU hover
 
 .nav__btn:hover {
   opacity: 0.5;
@@ -64,11 +59,49 @@
   transition: 2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.nav__item:hover {
-  background: var(--hot-pink);
-  color: var(--white);
-  border-radius: 5px;
+// formatting for nav ITEM
+
+.nav__item {
   cursor: pointer;
+  position: relative;
+  line-height: 2.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+.nav__item:before,
+.nav__item:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  background: var(--dark-grey);
+}
+
+.nav__item:before {
+  left: 0.5rem;
+}
+
+.nav__item:after {
+  right: -0.5rem;
+  background: var(--dark-grey);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+// animation for nav ITEM hover
+
+.nav__item:hover:before {
+  background: var(--dark-grey);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav__item:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 
 @media all and (max-width: 767px) {
